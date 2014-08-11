@@ -1,5 +1,5 @@
 {
-  "name": "azApp",
+  "name": "saneSeed",
   "version": "0.0.0",
   "description": "Full Stack Javascript",
   "main": "server.js",
@@ -7,7 +7,6 @@
     "start": "nodemon server"
   },
   "author": "Alex Wilmer",
-  "license": "ISC",
   "engines": {
     "node": "0.10.x"
   },
