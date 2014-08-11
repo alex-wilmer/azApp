@@ -1,10 +1,10 @@
 {
-  "name": "herokuApp",
+  "name": "azApp",
   "version": "0.0.0",
-  "description": "Heroku Application",
+  "description": "Full Stack Javascript",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server"
   },
   "author": "Alex Wilmer",
   "license": "ISC",

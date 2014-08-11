@@ -18,13 +18,11 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function (socket) {
-	//socket.on('writeFile', function(data) {
-		var date = new Date();
-		var data = date.getFullYear() + date.getSeconds();
-		fs.writeFile('message.txt', data, function (err) {
+	socket.on('save', function(data) {
+		fs.writeFile('public/log', data.text, function (err) {
 		  if (err) throw err;
-		  console.log('It\'s saved!');
+		  console.log('Log saved!');
 		});
-	//});
+	});
 });
 

@@ -1,9 +1,19 @@
 <script src="/lib/angular.js"></script>
+<script src="/lib/angular-route.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script>
   var socket = io('http://localhost');
 </script>
-
-<div ng-app>
-{{3+4}}
-</div>
+<div ng-app="app">
+	<nav>
+		<a ng-href="/#/">Home</a>
+		<a ng-href="/#/about">About</a>
+	</nav>
+	<div ng-view></div>
+</div> 
+<script>
+	var app = angular.module('app', ['ngRoute']);
+</script>
+<script src="routes.js"></script>
+<script src="controllers.js"></script>
+<script src="directives.js"></script>
