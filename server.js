@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 
 io.on('connection', function (socket) {
 	socket.on('save', function(data) {
-		fs.writeFile('public/log', data.text, function (err) {
+		fs.writeFile('public/data/log', data.text, function (err) {
 		  if (err) throw err;
 		  console.log('Log saved!');
 		});

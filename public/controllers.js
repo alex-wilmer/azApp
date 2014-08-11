@@ -5,7 +5,7 @@ app.controller('home', function($scope, $http) {
 			text: text
 		});
 	};
-	$http.get('log').success(function(data) {$scope.log = data;});
+	$http.get('data/log').success(function(data) {$scope.log = data;});
 }).controller('about', function($scope) {
 	$scope.lifeStory = "I am a coder with ambition";
 })

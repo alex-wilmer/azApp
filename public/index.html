@@ -1,9 +1,6 @@
 <script src="/lib/angular.js"></script>
 <script src="/lib/angular-route.js"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script>
-  var socket = io('http://localhost');
-</script>
 <div ng-app="app">
 	<nav>
 		<a ng-href="/#/">Home</a>
@@ -13,6 +10,7 @@
 </div> 
 <script>
 	var app = angular.module('app', ['ngRoute']);
+	var socket = io('http://localhost');
 </script>
 <script src="routes.js"></script>
 <script src="controllers.js"></script>
